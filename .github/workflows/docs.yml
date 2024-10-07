@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - HMC-337
 permissions:
   contents: write
 jobs:
