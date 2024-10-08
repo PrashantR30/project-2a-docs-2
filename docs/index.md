@@ -1,52 +1,35 @@
-# Welcome to Mirantis Project 2A Docs
 
+<p align="center">
+   <!-- <font size="10"><b>Project 2A</b></font><br> -->
+   <img src="./assets/project-2a-lockup.svg" width="240">
+</p>
 
 # Introduction
+Mirantis Project 2A is designed to provide a consistent, scalable approach to deploying and managing Kubernetes clusters.<br><br>
+The project aims to offer a repeatable, secure, and efficient method to leverage existing tools within the Kubernetes ecosystem, such as Cluster API, without modifications.<br><br>
+This ensures flexibility while accommodating the diverse use cases common in enterprise IT environments. For more detailed information, refer to the [introduction](./introduction.md) .
 
-Mirantis Project 2A and is focused and developing a consistent way to deploy 
-and manage kubernetes clusters at scale. More information can be found [here](./introduction.md) 
+# Key Objectives
+Project 2A revolves around creating standardized templates that streamline cluster deployment and lifecycle management.
+The project focuses on scalability, ease of use, and consistency.
 
-Project 2A was created to be a repeatable and secure way to leverage the tools 
-developed as part of the kubernetes ecosystem e.g. Cluster API without modifying 
-them, yet still being able to provide for the range of unique use cases we have 
-come across within enterprise IT environments. 
+### Core Components<br>
+The main components of Project 2A include:
 
-## Main Premise
+* **Hybrid Multi-Cluster Management (HMC):**
+   Provides deployment and lifecycle management for Kubernetes clusters, handling configuration, updates, and all CRUD operations.
 
-2A is built around the creation of a set of standardised templates that enable 
-easy and repeatable cluster deployments and life cycle management. 
+* **Cluster State Management (SMC):**
+   Manages the installation and lifecycle of beachhead services, policies, Kubernetes API configurations, and more.
 
-The main components of 2A include:
-
- * Hybrid Multi Cluster Management(HMC)
-   
-    Deployment and lifecycle managment of kubernetes clusters, including configuration, updates, and other CRUD operations.
-
- * Cluster State Management (SMC)
-
-    Installation and lifecycle management of [beachead services](glossary.md#beach-head-services), policy, kubernetes api configurations and more.
-
- * Observability (OBS)
-
-    Cluster and beach head services monitoring, events and log management.
+* **Observability (OBS):**
+   Monitors clusters and beachhead services, including event logging and management of logs.
 
 
-## Supported Providers
-
-HMC leverages the Cluster API provider ecosystem, the following providers have 
-had templates created and validated, and more are in the works.
-
+## Supported Cloud Providers
+HMC leverages the Cluster API provider ecosystem to enable seamless integration with various cloud platforms. The following cloud providers currently have validated templates, with additional support planned. Follow the Quick Setup Guide for each provider below to get started:
 
  * [AWS](./aws/main.md)
  * [Azure](./azure/main.md)
- * [Vsphere](./vsphere/main.md)
-
-
-
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        
+ * [Vsphere](./vsphere/main.md)    
+<hr>
